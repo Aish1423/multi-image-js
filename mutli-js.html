@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            position: fixed; top:20px; left: 20px; bottom: 20px; right: 20px; 
+                border: 2px solid red;
+        }
+        img{
+          height: 180px;
+          width: 220px;
+          margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <img src="carr.jpg" id="car" onmouseover="changeImg()" onmouseout="changeImg()" style="margin-left: 480px;"> <br> <br> <br> <br>
+    <img src="car1.jpg" id="car1" onmouseover="changeImg2()" onmouseout="changeImg()"style="margin-left: 140px;">
+    <img src="car2.jpg" id="car2" onmouseover="changeImg3()" onmouseout="changeImg()" style="padding-left: 10px;">
+    <img src="car3.jpg" id="car3" onmouseover="changeImg4()" onmouseout="changeImg()" style="padding-left: 10px;">
+    <img src="car4.jpg" id="car4" onmouseover="changeImg5()" onmouseout="changeImg()" style="padding-left: 10px;">
+    <script>
+        function changeImg(){
+            document.getElementById("car").src="carr.jpg"
+        }
+        function changeImg2(){
+            document.getElementById("car").src="car1.jpg"
+        }
+        function changeImg3(){
+            document.getElementById("car").src="car2.jpg"
+        }
+        function changeImg4(){
+            document.getElementById("car").src="car3.jpg"
+        }
+        function changeImg5(){
+            document.getElementById("car").src="car4.jpg"
+        }
+        
+
+    </script>
+    
+</body>
+</html>
